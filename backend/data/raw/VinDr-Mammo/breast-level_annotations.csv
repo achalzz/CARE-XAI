@@ -1,0 +1,25 @@
+study_id,series_id,image_id,laterality,view_position,breast_birads,breast_density,split
+study_0001,series_1,img_cc_0001,L,CC,BI-RADS 1,DENSITY C,training
+study_0001,series_1,img_mlo_0001,L,MLO,BI-RADS 1,DENSITY C,training
+study_0002,series_2,img_cc_0002,L,CC,BI-RADS 5,DENSITY C,training
+study_0002,series_2,img_mlo_0002,L,MLO,BI-RADS 5,DENSITY C,training
+study_0003,series_3,img_cc_0003,L,CC,BI-RADS 1,DENSITY C,training
+study_0003,series_3,img_mlo_0003,L,MLO,BI-RADS 1,DENSITY C,training
+study_0004,series_4,img_cc_0004,L,CC,BI-RADS 5,DENSITY C,training
+study_0004,series_4,img_mlo_0004,L,MLO,BI-RADS 5,DENSITY C,training
+study_0005,series_5,img_cc_0005,L,CC,BI-RADS 1,DENSITY C,training
+study_0005,series_5,img_mlo_0005,L,MLO,BI-RADS 1,DENSITY C,training
+study_0006,series_6,img_cc_0006,L,CC,BI-RADS 5,DENSITY C,training
+study_0006,series_6,img_mlo_0006,L,MLO,BI-RADS 5,DENSITY C,training
+study_0007,series_7,img_cc_0007,L,CC,BI-RADS 1,DENSITY C,training
+study_0007,series_7,img_mlo_0007,L,MLO,BI-RADS 1,DENSITY C,training
+study_0008,series_8,img_cc_0008,L,CC,BI-RADS 5,DENSITY C,training
+study_0008,series_8,img_mlo_0008,L,MLO,BI-RADS 5,DENSITY C,training
+study_0009,series_9,img_cc_0009,L,CC,BI-RADS 1,DENSITY C,training
+study_0009,series_9,img_mlo_0009,L,MLO,BI-RADS 1,DENSITY C,training
+study_0010,series_10,img_cc_0010,L,CC,BI-RADS 5,DENSITY C,test
+study_0010,series_10,img_mlo_0010,L,MLO,BI-RADS 5,DENSITY C,test
+study_0011,series_11,img_cc_0011,L,CC,BI-RADS 1,DENSITY C,test
+study_0011,series_11,img_mlo_0011,L,MLO,BI-RADS 1,DENSITY C,test
+study_0012,series_12,img_cc_0012,L,CC,BI-RADS 5,DENSITY C,test
+study_0012,series_12,img_mlo_0012,L,MLO,BI-RADS 5,DENSITY C,test

@@ -1,0 +1,13 @@
+patient_id,cc_path,mlo_path,age,label,dataset_source,split
+EMBED_0001,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0001\CC.dcm,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0001\MLO.dcm,49.0,0,EMBED,train
+EMBED_0002,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0002\CC.dcm,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0002\MLO.dcm,51.0,1,EMBED,train
+EMBED_0003,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0003\CC.dcm,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0003\MLO.dcm,57.0,0,EMBED,train
+EMBED_0004,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0004\CC.dcm,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0004\MLO.dcm,57.0,1,EMBED,train
+EMBED_0005,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0005\CC.dcm,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0005\MLO.dcm,48.0,0,EMBED,train
+EMBED_0006,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0006\CC.dcm,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0006\MLO.dcm,69.0,1,EMBED,train
+EMBED_0007,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0007\CC.dcm,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0007\MLO.dcm,30.0,0,EMBED,test
+EMBED_0008,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0008\CC.dcm,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0008\MLO.dcm,55.0,1,EMBED,train
+EMBED_0009,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0009\CC.dcm,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0009\MLO.dcm,45.0,0,EMBED,val
+EMBED_0010,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0010\CC.dcm,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0010\MLO.dcm,42.0,1,EMBED,val
+EMBED_0011,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0011\CC.dcm,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0011\MLO.dcm,44.0,0,EMBED,train
+EMBED_0012,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0012\CC.dcm,C:\Users\achal\care-xai\backend\data\raw\EMBED\images\EMBED_0012\MLO.dcm,75.0,1,EMBED,test

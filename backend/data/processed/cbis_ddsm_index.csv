@@ -1,0 +1,13 @@
+patient_id,cc_path,mlo_path,age,label,dataset_source,split
+P_00001,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\BENIGN,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\BENIGN,,0,CBIS-DDSM,train
+P_00002,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\MALIGNANT,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\MALIGNANT,,1,CBIS-DDSM,train
+P_00003,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\BENIGN,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\BENIGN,,0,CBIS-DDSM,train
+P_00004,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\MALIGNANT,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\MALIGNANT,,1,CBIS-DDSM,train
+P_00005,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\BENIGN,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\BENIGN,,0,CBIS-DDSM,train
+P_00006,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\MALIGNANT,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\MALIGNANT,,1,CBIS-DDSM,train
+P_00007,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\BENIGN,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\BENIGN,,0,CBIS-DDSM,test
+P_00008,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\MALIGNANT,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\MALIGNANT,,1,CBIS-DDSM,train
+P_00009,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\BENIGN,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\BENIGN,,0,CBIS-DDSM,val
+P_00010,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\MALIGNANT,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\MALIGNANT,,1,CBIS-DDSM,val
+P_00011,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\BENIGN,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\BENIGN,,0,CBIS-DDSM,train
+P_00012,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\MALIGNANT,C:\Users\achal\care-xai\backend\data\raw\CBIS-DDSM\MALIGNANT,,1,CBIS-DDSM,test

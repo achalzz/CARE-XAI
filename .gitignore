@@ -1,0 +1,42 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Node.js & Web build artifacts
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+.vite/
+**/.vite/
+package-lock.json
+
+# Local design scratch files & saved web references
+Sixth.html
+Sixth_files/
+scratch/
+*.tmp
+*.log
+
+# Databases & local user state
+*.sqlite
+*.sqlite3
+*.db
+backend/data/care_xai.db
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Output artifacts
+backend/outputs/*.json
+!backend/outputs/.gitkeep

@@ -1,0 +1,13 @@
+patient_id,cc_path,mlo_path,age,label,dataset_source,split
+1001,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1001_CC.dcm,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1001_MLO.dcm,55.0,0,INbreast,train
+1002,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1002_CC.dcm,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1002_MLO.dcm,34.0,1,INbreast,train
+1003,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1003_CC.dcm,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1003_MLO.dcm,31.0,0,INbreast,train
+1004,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1004_CC.dcm,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1004_MLO.dcm,49.0,1,INbreast,train
+1005,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1005_CC.dcm,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1005_MLO.dcm,47.0,0,INbreast,train
+1006,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1006_CC.dcm,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1006_MLO.dcm,47.0,1,INbreast,train
+1007,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1007_CC.dcm,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1007_MLO.dcm,67.0,0,INbreast,test
+1008,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1008_CC.dcm,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1008_MLO.dcm,71.0,1,INbreast,train
+1009,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1009_CC.dcm,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1009_MLO.dcm,72.0,0,INbreast,val
+1010,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1010_CC.dcm,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1010_MLO.dcm,41.0,1,INbreast,val
+1011,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1011_CC.dcm,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1011_MLO.dcm,44.0,0,INbreast,train
+1012,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1012_CC.dcm,C:\Users\achal\care-xai\backend\data\raw\INbreast\AllDICOMs\1012_MLO.dcm,71.0,1,INbreast,test

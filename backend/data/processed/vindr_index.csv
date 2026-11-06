@@ -1,0 +1,13 @@
+patient_id,cc_path,mlo_path,age,label,dataset_source,split
+study_0001,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0001\img_cc_0001.dcm,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0001\img_mlo_0001.dcm,,0,VinDr-Mammo,train
+study_0002,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0002\img_cc_0002.dcm,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0002\img_mlo_0002.dcm,,1,VinDr-Mammo,val
+study_0003,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0003\img_cc_0003.dcm,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0003\img_mlo_0003.dcm,,0,VinDr-Mammo,train
+study_0004,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0004\img_cc_0004.dcm,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0004\img_mlo_0004.dcm,,1,VinDr-Mammo,train
+study_0005,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0005\img_cc_0005.dcm,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0005\img_mlo_0005.dcm,,0,VinDr-Mammo,train
+study_0006,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0006\img_cc_0006.dcm,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0006\img_mlo_0006.dcm,,1,VinDr-Mammo,train
+study_0007,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0007\img_cc_0007.dcm,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0007\img_mlo_0007.dcm,,0,VinDr-Mammo,train
+study_0008,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0008\img_cc_0008.dcm,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0008\img_mlo_0008.dcm,,1,VinDr-Mammo,val
+study_0009,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0009\img_cc_0009.dcm,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0009\img_mlo_0009.dcm,,0,VinDr-Mammo,train
+study_0010,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0010\img_cc_0010.dcm,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0010\img_mlo_0010.dcm,,1,VinDr-Mammo,test
+study_0011,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0011\img_cc_0011.dcm,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0011\img_mlo_0011.dcm,,0,VinDr-Mammo,test
+study_0012,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0012\img_cc_0012.dcm,C:\Users\achal\care-xai\backend\data\raw\VinDr-Mammo\images\study_0012\img_mlo_0012.dcm,,1,VinDr-Mammo,test

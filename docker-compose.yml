@@ -1,0 +1,15 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports: ["8000:8000"]
+    volumes:
+      - ./backend/data:/app/backend/data
+      - ./backend/checkpoints:/app/backend/checkpoints:ro
+  web:
+    build:
+      context: .
+      dockerfile: frontend_react/Dockerfile
+    ports: ["5173:80"]
+    depends_on: [api]

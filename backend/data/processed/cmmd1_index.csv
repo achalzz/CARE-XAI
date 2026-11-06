@@ -1,0 +1,13 @@
+patient_id,cc_path,mlo_path,age,label,split
+D1-0001,backend\data\raw\CMMD\D1-0001\CC.dcm,backend\data\raw\CMMD\D1-0001\MLO.dcm,66.0,0,train
+D1-0002,backend\data\raw\CMMD\D1-0002\CC.dcm,backend\data\raw\CMMD\D1-0002\MLO.dcm,50.0,1,train
+D1-0003,backend\data\raw\CMMD\D1-0003\CC.dcm,backend\data\raw\CMMD\D1-0003\MLO.dcm,69.0,0,train
+D1-0004,backend\data\raw\CMMD\D1-0004\CC.dcm,backend\data\raw\CMMD\D1-0004\MLO.dcm,67.0,1,train
+D1-0005,backend\data\raw\CMMD\D1-0005\CC.dcm,backend\data\raw\CMMD\D1-0005\MLO.dcm,50.0,0,val
+D1-0006,backend\data\raw\CMMD\D1-0006\CC.dcm,backend\data\raw\CMMD\D1-0006\MLO.dcm,39.0,1,train
+D1-0007,backend\data\raw\CMMD\D1-0007\CC.dcm,backend\data\raw\CMMD\D1-0007\MLO.dcm,34.0,0,test
+D1-0008,backend\data\raw\CMMD\D1-0008\CC.dcm,backend\data\raw\CMMD\D1-0008\MLO.dcm,72.0,1,train
+D1-0009,backend\data\raw\CMMD\D1-0009\CC.dcm,backend\data\raw\CMMD\D1-0009\MLO.dcm,67.0,0,test
+D1-0010,backend\data\raw\CMMD\D1-0010\CC.dcm,backend\data\raw\CMMD\D1-0010\MLO.dcm,69.0,1,test
+D1-0011,backend\data\raw\CMMD\D1-0011\CC.dcm,backend\data\raw\CMMD\D1-0011\MLO.dcm,50.0,0,train
+D1-0012,backend\data\raw\CMMD\D1-0012\CC.dcm,backend\data\raw\CMMD\D1-0012\MLO.dcm,43.0,1,val
