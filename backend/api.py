@@ -203,15 +203,15 @@ def get_sample_patients():
     if not INDEX_PATH.exists():
         return {"samples": []}
     df = pd.read_csv(INDEX_PATH)
-    test_df = df[df["split"] == "test"].copy()
     samples = []
-    for _, r in test_df.iterrows():
+    for _, r in df.iterrows():
         samples.append({
             "patient_id": str(r["patient_id"]),
-            "age": float(r["age"]) if pd.notna(r["age"]) else None,
-            "ground_truth_label": "malignant" if int(r["label"]) == 1 else "benign",
-            "cc_path": str(r["cc_path"]),
-            "mlo_path": str(r["mlo_path"]),
+            "age": float(r["age"]) if pd.notna(r["age"]) else 45.0,
+            "ground_truth_label": "MALIGNANT" if int(r.get("label", 0)) == 1 else "BENIGN",
+            "split": str(r.get("split", "test")),
+            "cc_path": str(r.get("cc_path", "")),
+            "mlo_path": str(r.get("mlo_path", "")),
         })
     return {"samples": samples}
 
@@ -222,11 +222,17 @@ def predict_patient(patient_id: str = Form(...), mc_samples: int = Form(15)):
     if not INDEX_PATH.exists():
         raise HTTPException(status_code=400, detail="Patient index file not found.")
 
-    ds = CMMDDualViewDataset(INDEX_PATH, "test", ckpt.get("image_size", 384), False,
+    df_full = pd.read_csv(INDEX_PATH)
+    patient_rows = df_full[df_full["patient_id"].astype(str) == str(patient_id)]
+    if patient_rows.empty:
+        raise HTTPException(status_code=404, detail=f"Patient {patient_id} not found in index.")
+
+    target_split = str(patient_rows.iloc[0]["split"])
+    ds = CMMDDualViewDataset(INDEX_PATH, target_split, ckpt.get("image_size", 384), False,
                              age_mean=ckpt.get("age_mean", 45.92), age_std=ckpt.get("age_std", 11.5))
-    matches = [i for i in range(len(ds)) if str(ds.df.iloc[i].patient_id) == patient_id]
+    matches = [i for i in range(len(ds)) if str(ds.df.iloc[i].patient_id) == str(patient_id)]
     if not matches:
-        raise HTTPException(status_code=404, detail=f"Patient {patient_id} not found in test split.")
+        raise HTTPException(status_code=404, detail=f"Patient {patient_id} could not be loaded.")
 
     batch = ds[matches[0]]
     raw_age = float(ds.df.iloc[matches[0]].age) if pd.notna(ds.df.iloc[matches[0]].age) else 46.0

@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
 import Dashboard from './components/Dashboard';
+import ArchitectureExplorer from './components/ArchitectureExplorer';
 import SignInModal from './components/SignInModal';
 import './App.css';
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState('landing'); // 'landing' | 'dashboard'
+  const [activeTab, setActiveTab] = useState('landing'); // 'landing' | 'dashboard' | 'architecture'
   const [isSignInOpen, setIsSignInOpen] = useState(false);
   const [user, setUser] = useState(null);
 
@@ -28,6 +29,11 @@ export default function App() {
   const handleSignOut = () => {
     setUser(null);
     setActiveTab('landing');
+  };
+
+  const handleExploreArchitecture = () => {
+    setActiveTab('architecture');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -52,6 +58,11 @@ export default function App() {
           <LandingPage 
             onLaunchWorkstation={handleLaunchWorkstation}
             onOpenSignIn={handleOpenSignIn}
+            onExploreArchitecture={handleExploreArchitecture}
+          />
+        ) : activeTab === 'architecture' ? (
+          <ArchitectureExplorer 
+            onLaunchWorkstation={handleLaunchWorkstation}
           />
         ) : (
           <Dashboard />

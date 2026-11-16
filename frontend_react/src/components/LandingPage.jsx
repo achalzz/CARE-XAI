@@ -14,7 +14,7 @@ import {
   Terminal
 } from 'lucide-react';
 
-export default function LandingPage({ onLaunchWorkstation, onOpenSignIn }) {
+export default function LandingPage({ onLaunchWorkstation, onOpenSignIn, onExploreArchitecture }) {
   return (
     <div style={{ position: 'relative', overflow: 'hidden', minHeight: '90vh' }}>
       
@@ -73,14 +73,21 @@ export default function LandingPage({ onLaunchWorkstation, onOpenSignIn }) {
               <button 
                 className="sd-btn sd-btn-accent sd-pulse-glow" 
                 onClick={onLaunchWorkstation}
-                style={{ height: '52px', padding: '0 28px', fontSize: '15.5px' }}
+                style={{ height: '52px', padding: '0 26px', fontSize: '15px' }}
               >
-                Launch Diagnostic Workstation <ArrowRight size={18} />
+                Launch Diagnostic Workstation <ArrowRight size={17} />
+              </button>
+              <button 
+                className="sd-btn sd-btn-cyan" 
+                onClick={onExploreArchitecture}
+                style={{ height: '52px', padding: '0 22px', fontSize: '15px' }}
+              >
+                <Cpu size={16} /> How It Works (Pipeline)
               </button>
               <button 
                 className="sd-btn" 
                 onClick={onOpenSignIn}
-                style={{ height: '52px', padding: '0 24px', fontSize: '15.5px' }}
+                style={{ height: '52px', padding: '0 20px', fontSize: '14.5px' }}
               >
                 Clinical Sign In
               </button>

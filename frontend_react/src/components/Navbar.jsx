@@ -1,5 +1,5 @@
 import React from 'react';
-import { Activity, Shield, Sparkles, UserCheck, Lock } from 'lucide-react';
+import { Activity, Shield, Sparkles, UserCheck, Lock, Cpu } from 'lucide-react';
 
 export default function Navbar({ activeTab, setActiveTab, user, onSignOut }) {
   return (
@@ -50,20 +50,27 @@ export default function Navbar({ activeTab, setActiveTab, user, onSignOut }) {
           </button>
 
           {/* Navigation Links */}
-          <nav style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <nav style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <button 
               className={`sd-btn ${activeTab === 'landing' ? 'sd-btn-accent' : 'sd-btn-ghost'}`}
               onClick={() => setActiveTab('landing')}
-              style={{ fontSize: '13.5px', height: '36px' }}
+              style={{ fontSize: '13px', height: '36px', padding: '0 14px' }}
             >
               <Sparkles size={14} /> Overview
             </button>
             <button 
               className={`sd-btn ${activeTab === 'dashboard' ? 'sd-btn-accent' : 'sd-btn-ghost'}`}
               onClick={() => setActiveTab('dashboard')}
-              style={{ fontSize: '13.5px', height: '36px' }}
+              style={{ fontSize: '13px', height: '36px', padding: '0 14px' }}
             >
               <Activity size={14} /> Diagnostic Workstation
+            </button>
+            <button 
+              className={`sd-btn ${activeTab === 'architecture' ? 'sd-btn-accent' : 'sd-btn-ghost'}`}
+              onClick={() => setActiveTab('architecture')}
+              style={{ fontSize: '13px', height: '36px', padding: '0 14px' }}
+            >
+              <Cpu size={14} /> How It Works (Pipeline)
             </button>
           </nav>
         </div>
