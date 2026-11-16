@@ -1,0 +1,15 @@
+PATIENT CLINICAL SUMMARY FOR CUSTOM DEMO
+=========================================
+Case: Case_3_High_Risk_Lesion_Age_69
+Ground Truth Pathology: Malignant (High-Risk Asymmetric Lesion)
+Patient Age to Enter: 69
+Breast Density: C (Dense Breast)
+Clinical Notes: High-risk case. Asymmetric focal density with microcalcification cluster.
+
+INSTRUCTIONS FOR TEACHER DEMO:
+1. Open http://localhost:5173/
+2. In 'Step 1: Patient Cohort Intake', click 'Upload Custom Dual-View Scans'.
+3. Select 'patient_CC_view.dcm' (or .png) for CC View.
+4. Select 'patient_MLO_view.dcm' (or .png) for MLO View.
+5. In the 'Patient Age' field, enter: 69
+6. Click 'Run Paired Dual-View Inference'.

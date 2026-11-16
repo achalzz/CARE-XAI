@@ -1,0 +1,15 @@
+PATIENT CLINICAL SUMMARY FOR CUSTOM DEMO
+=========================================
+Case: Case_2_Screening_Benign_Age_67
+Ground Truth Pathology: Benign (Negative Screening Follow-up)
+Patient Age to Enter: 67
+Breast Density: B (Scattered Fibroglandular)
+Clinical Notes: Low-risk case. Routine benign glandular architecture with no suspicious calcification.
+
+INSTRUCTIONS FOR TEACHER DEMO:
+1. Open http://localhost:5173/
+2. In 'Step 1: Patient Cohort Intake', click 'Upload Custom Dual-View Scans'.
+3. Select 'patient_CC_view.dcm' (or .png) for CC View.
+4. Select 'patient_MLO_view.dcm' (or .png) for MLO View.
+5. In the 'Patient Age' field, enter: 67
+6. Click 'Run Paired Dual-View Inference'.

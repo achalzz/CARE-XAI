@@ -22,7 +22,8 @@ import {
   FileText,
   User,
   Layers,
-  ArrowRight
+  ArrowRight,
+  FolderOpen
 } from 'lucide-react';
 
 const API = 'http://localhost:8000';
@@ -399,21 +400,71 @@ export default function Dashboard() {
             })}
           </div>
         ) : (
-          <div style={{ padding: '16px', borderRadius: '12px', background: 'rgba(255,255,255,0.02)', border: '1px dashed var(--line)' }}>
+          <div style={{ padding: '20px', borderRadius: '12px', background: 'rgba(255,255,255,0.02)', border: '1px dashed var(--line)' }}>
+            
+            {/* Quick Demo Helper Box */}
+            <div style={{ marginBottom: '18px', padding: '14px 16px', borderRadius: '10px', background: 'rgba(15, 204, 206, 0.08)', border: '1px solid rgba(15, 204, 206, 0.25)' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+                <FolderOpen size={16} color="var(--accent-2)" />
+                <b style={{ fontSize: '13.5px', color: 'var(--accent-2)' }}>Ready-to-Use Test Cases in Project:</b>
+                <span className="sd-mono" style={{ fontSize: '12px', background: 'rgba(0,0,0,0.4)', padding: '2px 8px', borderRadius: '4px', color: 'var(--text)' }}>
+                  care-xai/demo_test_cases/
+                </span>
+              </div>
+              <p style={{ fontSize: '12.5px', color: 'var(--text-2)', margin: '0 0 10px', lineHeight: 1.5 }}>
+                Teacher ke saamne test karne ke liye 3 verified test folders already ready hain. Har folder mein <b>patient_CC_view.dcm</b> (ya <b>.png</b>) aur <b>patient_MLO_view.dcm</b> (ya <b>.png</b>) mojood hain:
+              </p>
+
+              {/* Quick Fill Buttons */}
+              <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                <button
+                  type="button"
+                  onClick={() => { setAge(39); setCov(c => ({ ...c, density: 'C', family_history: true })); }}
+                  style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid var(--line)', color: 'var(--text)', padding: '6px 12px', borderRadius: '6px', fontSize: '11.5px', cursor: 'pointer' }}
+                >
+                  ⚡ Set Patient Info: <b>Case 1 (Age 39, Malignant)</b>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => { setAge(67); setCov(c => ({ ...c, density: 'B', family_history: false })); }}
+                  style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid var(--line)', color: 'var(--text)', padding: '6px 12px', borderRadius: '6px', fontSize: '11.5px', cursor: 'pointer' }}
+                >
+                  ⚡ Set Patient Info: <b>Case 2 (Age 67, Benign)</b>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => { setAge(69); setCov(c => ({ ...c, density: 'C', family_history: true })); }}
+                  style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid var(--line)', color: 'var(--text)', padding: '6px 12px', borderRadius: '6px', fontSize: '11.5px', cursor: 'pointer' }}
+                >
+                  ⚡ Set Patient Info: <b>Case 3 (Age 69, High-Risk)</b>
+                </button>
+              </div>
+            </div>
+
+            {/* Upload Inputs */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '14px', marginBottom: '14px' }}>
-              <label style={{ border: '1px dashed var(--line)', padding: '14px', borderRadius: '10px', cursor: 'pointer', display: 'block' }}>
-                <Upload size={16} /> <b>CC View:</b> {ccFile?.name || 'Choose CC DICOM/Image'}
+              <label style={{ border: ccFile ? '1px solid var(--accent-2)' : '1px dashed var(--line)', padding: '16px', borderRadius: '10px', cursor: 'pointer', display: 'block', background: ccFile ? 'rgba(15, 204, 206, 0.05)' : 'transparent' }}>
+                <Upload size={16} color={ccFile ? 'var(--accent-2)' : 'var(--text-3)'} /> <b style={{ fontSize: '13px' }}>1. CC View:</b>
+                <div style={{ fontSize: '12px', color: ccFile ? 'var(--text)' : 'var(--text-3)', marginTop: '4px', wordBreak: 'break-all' }}>
+                  {ccFile ? `✓ ${ccFile.name}` : 'Click to select patient_CC_view (.dcm or .png)'}
+                </div>
                 <input hidden type="file" accept=".dcm,.dicom,image/*" onChange={e => setCcFile(e.target.files[0])} />
               </label>
 
-              <label style={{ border: '1px dashed var(--line)', padding: '14px', borderRadius: '10px', cursor: 'pointer', display: 'block' }}>
-                <Upload size={16} /> <b>MLO View:</b> {mloFile?.name || 'Choose MLO DICOM/Image'}
+              <label style={{ border: mloFile ? '1px solid var(--accent)' : '1px dashed var(--line)', padding: '16px', borderRadius: '10px', cursor: 'pointer', display: 'block', background: mloFile ? 'rgba(167, 60, 255, 0.05)' : 'transparent' }}>
+                <Upload size={16} color={mloFile ? 'var(--accent)' : 'var(--text-3)'} /> <b style={{ fontSize: '13px' }}>2. MLO View:</b>
+                <div style={{ fontSize: '12px', color: mloFile ? 'var(--text)' : 'var(--text-3)', marginTop: '4px', wordBreak: 'break-all' }}>
+                  {mloFile ? `✓ ${mloFile.name}` : 'Click to select patient_MLO_view (.dcm or .png)'}
+                </div>
                 <input hidden type="file" accept=".dcm,.dicom,image/*" onChange={e => setMloFile(e.target.files[0])} />
               </label>
 
               <div>
-                <label style={{ display: 'block', fontSize: '12px', marginBottom: '4px' }}>Patient Age</label>
+                <label style={{ display: 'block', fontSize: '12px', marginBottom: '4px', fontWeight: 600 }}>3. Patient Age</label>
                 <input style={inputStyle} type="number" value={age} onChange={e => setAge(+e.target.value)} />
+                <small style={{ color: 'var(--text-3)', fontSize: '11px', display: 'block', marginTop: '4px' }}>
+                  Case 1 = 39, Case 2 = 67, Case 3 = 69
+                </small>
               </div>
             </div>
 
@@ -421,9 +472,9 @@ export default function Dashboard() {
               className="sd-btn sd-btn-accent" 
               onClick={handleCustomDiagnose}
               disabled={!ccFile || !mloFile || loading}
-              style={{ height: '40px', padding: '0 20px' }}
+              style={{ height: '42px', padding: '0 24px', fontSize: '13.5px' }}
             >
-              {loading ? 'Processing Dual-View Fusion...' : 'Run Paired Dual-View Inference'}
+              {loading ? 'Processing Dual-View Multimodal Inference...' : 'Run Paired Dual-View Inference'}
             </button>
           </div>
         )}
